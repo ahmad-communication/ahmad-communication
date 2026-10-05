@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahmad Communication | Digital & Online Services</title>
+
+<meta name="description" content="Ahmad Communication - Chak Alwardi Khan. Government, NADRA, Education, Jobs, Online Applications, Printing and Digital Services.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
+:root{
+    --primary:#0b6b5b;
+    --primary2:#0d9488;
+    --dark:#071c2c;
+    --gold:#f4b942;
+    --light:#f4f8f7;
+    --white:#ffffff;
+    --text:#24323d;
+    --muted:#687780;
+    --shadow:0 15px 45px rgba(7,28,44,.10);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--light);
+    color:var(--text);
+    font-family:"Noto Naskh Arabic",Arial,sans-serif;
+    overflow-x:hidden;
+}
+
+/* ================= TOP BAR ================= */
+
+.top{
+    background:var(--dark);
+    color:#fff;
+    padding:8px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:Inter,Arial,sans-serif;
+    font-size:13px;
+}
+
+.top span{
+    margin-left:18px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+    height:78px;
+    padding:0 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 25px rgba(0,0,0,.07);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+}
+
+.logo{
+    width:48px;
+    height:48px;
+    border-radius:14px;
+    background:linear-gradient(135deg,var(--primary),var(--primary2));
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Inter;
+    font-weight:800;
+    font-size:20px;
+    box-shadow:0 8px 20px rgba(13,148,136,.25);
+}
+
+.brand-text{
+    line-height:1.1;
+}
+
+.brand-text strong{
+    display:block;
+    color:var(--dark);
+    font-family:Inter;
+    font-size:18px;
+}
+
+.brand-text small{
+    color:var(--primary);
+    font-family:Inter;
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    font-family:Inter;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:var(--primary2);
+}
+
+.nav-btn{
+    text-decoration:none;
+    background:var(--primary);
+    color:#fff;
+    padding:11px 18px;
+    border-radius:10px;
+    font-family:Inter;
+    font-size:13px;
+    font-weight:700;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    position:relative;
+    min-height:650px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    background:
+    radial-gradient(circle at 85% 25%,rgba(13,148,136,.35),transparent 28%),
+    radial-gradient(circle at 10% 80%,rgba(244,185,66,.15),transparent 25%),
+    linear-gradient(135deg,#061a29,#083d3a 55%,#087f70);
+    color:#fff;
+}
+
+.hero:before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:50%;
+    left:-180px;
+    bottom:-220px;
+}
+
+.hero:after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border:1px solid rgba(255,255,255,.10);
+    border-radius:50%;
+    right:-100px;
+    top:-120px;
+}
+
+.hero-inner{
+    width:88%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.15);
+    padding:8px 15px;
+    border-radius:30px;
+    font-family:Inter;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+.badge i{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#39e58c;
+    box-shadow:0 0 12px #39e58c;
+}
+
+.hero h1{
+    font-family:Inter,"Noto Naskh Arabic",sans-serif;
+    font-size:58px;
+    line-height:1.08;
+    margin-bottom:18px;
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero h2{
+    font-size:25px;
+    font-weight:500;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:680px;
+    color:#d5e6e6;
+    font-size:17px;
+    line-height:2;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:13px;
+    margin-top:28px;
+}
+
+.btn{
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 23px;
+    border-radius:11px;
+    font-family:Inter;
+    font-weight:700;
+    font-size:14px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-main{
+    background:#25d366;
+    color:#fff;
+    box-shadow:0 12px 25px rgba(37,211,102,.2);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.3);
+    color:#fff;
+    background:rgba(255,255,255,.06);
+}
+
+.btn-gold{
+    background:var(--gold);
+    color:#18202a;
+}
+
+/* HERO PANEL */
+
+.hero-panel{
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:25px;
+    padding:25px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+.panel-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+}
+
+.panel-title{
+    font-family:Inter;
+    font-weight:700;
+    font-size:17px;
+}
+
+.online{
+    color:#9ff0c2;
+    font-family:Inter;
+    font-size:11px;
+}
+
+.quick-services{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.quick{
+    background:rgba(255,255,255,.09);
+    border:1px solid rgba(255,255,255,.08);
+    padding:17px 10px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.quick:hover{
+    background:rgba(255,255,255,.16);
+    transform:translateY(-3px);
+}
+
+.quick-icon{
+    font-size:27px;
+    display:block;
+    margin-bottom:4px;
+}
+
+.quick span{
+    font-size:13px;
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    width:88%;
+    max-width:1100px;
+    margin:-45px auto 0;
+    position:relative;
+    z-index:10;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow:hidden;
+}
+
+.stat{
+    text-align:center;
+    padding:25px 15px;
+    border-left:1px solid #edf1f1;
+}
+
+.stat:last-child{
+    border-left:0;
+}
+
+.stat strong{
+    display:block;
+    color:var(--primary);
+    font-family:Inter;
+    font-size:27px;
+}
+
+.stat span{
+    color:var(--muted);
+    font-size:14px;
+}
+
+/* ================= COMMON ================= */
+
+section{
+    padding:90px 6%;
+}
+
+.section-head{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.section-head .tag{
+    color:var(--primary);
+    font-family:Inter;
+    font-size:11px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.section-head h2{
+    color:var(--dark);
+    font-family:Inter,"Noto Naskh Arabic",sans-serif;
+    font-size:37px;
+    margin:7px 0;
+}
+
+.section-head p{
+    color:var(--muted);
+    font-size:16px;
+}
+
+/* ================= SERVICES ================= */
+
+.services-section{
+    background:#f7faf9;
+}
+
+.service-tools{
+    max-width:1000px;
+    margin:0 auto 30px;
+    display:flex;
+    gap:12px;
+}
+
+.search{
+    flex:1;
+    border:1px solid #dfe8e6;
+    background:#fff;
+    border-radius:12px;
+    padding:14px 18px;
+    outline:none;
+    font-family:inherit;
+    font-size:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.04);
+}
+
+.search:focus{
+    border-color:var(--primary2);
+}
+
+.service-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.service{
+    background:#fff;
+    border:1px solid #e8eeee;
+    border-radius:18px;
+    padding:25px 20px;
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+}
+
+.service:before{
+    content:"";
+    position:absolute;
+    height:3px;
+    width:0;
+    right:0;
+    top:0;
+    background:var(--primary2);
+    transition:.35s;
+}
+
+.service:hover{
+    transform:translateY(-7px);
+    box-shadow:var(--shadow);
+    border-color:transparent;
+}
+
+.service:hover:before{
+    width:100%;
+}
+
+.service-icon{
+    width:50px;
+    height:50px;
+    border-radius:14px;
+    background:#eaf7f4;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    margin-bottom:15px;
+}
+
+.service h3{
+    color:var(--dark);
+    font-size:18px;
+    margin-bottom:6px;
+}
+
+.service p{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.8;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#fff;
+}
+
+.about-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-card{
+    background:linear-gradient(145deg,#073b39,#0b6b5b);
+    color:#fff;
+    border-radius:25px;
+    padding:38px;
+    min-height:350px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow:0 25px 50px rgba(7,107,91,.18);
+}
+
+.about-card .big{
+    font-family:Inter;
+    font-size:65px;
+    font-weight:800;
+    color:var(--gold);
+}
+
+.about-card h3{
+    font-size:25px;
+}
+
+.about-text h2{
+    font-family:Inter;
+    color:var(--dark);
+    font-size:35px;
+    margin-bottom:18px;
+}
+
+.about-text p{
+    color:var(--muted);
+    font-size:16px;
+    line-height:2;
+    margin-bottom:15px;
+}
+
+.points{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    margin-top:20px;
+}
+
+.point{
+    background:#f4f8f7;
+    padding:10px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+/* ================= PROCESS ================= */
+
+.process{
+    background:#f4f8f7;
+}
+
+.process-grid{
+    max-width:1050px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.step{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
+.step-number{
+    width:45px;
+    height:45px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 15px;
+    font-family:Inter;
+    font-weight:800;
+}
+
+.step h3{
+    color:var(--dark);
+    margin-bottom:5px;
+}
+
+.step p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+    padding:70px 6%;
+}
+
+.cta-box{
+    max-width:1100px;
+    margin:auto;
+    padding:55px;
+    border-radius:28px;
+    background:
+    radial-gradient(circle at 90% 20%,rgba(244,185,66,.22),transparent 25%),
+    linear-gradient(135deg,#061c2c,#087465);
+    color:#fff;
+    text-align:center;
+}
+
+.cta-box h2{
+    font-family:Inter,"Noto Naskh Arabic",sans-serif;
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+.cta-box p{
+    color:#d4e6e5;
+}
+
+/* ================= FAQ ================= */
+
+.faq{
+    background:#fff;
+}
+
+.faq-list{
+    max-width:850px;
+    margin:auto;
+}
+
+details{
+    background:#f7faf9;
+    border:1px solid #e5ecea;
+    border-radius:13px;
+    margin-bottom:12px;
+    padding:16px 20px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:700;
+    color:var(--dark);
+}
+
+details p{
+    color:var(--muted);
+    padding-top:10px;
+    font-size:14px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+    background:var(--dark);
+    color:#fff;
+}
+
+.contact-grid{
+    max-width:1050px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.contact-info h2{
+    font-family:Inter;
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.contact-info>p{
+    color:#b9cbd0;
+    line-height:2;
+    margin-bottom:25px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.contact-item .ci{
+    width:45px;
+    height:45px;
+    background:rgba(255,255,255,.08);
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact-item strong{
+    display:block;
+}
+
+.contact-item span{
+    color:#afc1c5;
+    font-size:13px;
+}
+
+.contact-form{
+    background:#fff;
+    padding:30px;
+    border-radius:22px;
+    color:var(--dark);
+}
+
+.contact-form h3{
+    font-family:Inter;
+    margin-bottom:18px;
+}
+
+.input{
+    width:100%;
+    padding:13px 15px;
+    border:1px solid #dce6e4;
+    border-radius:10px;
+    margin-bottom:12px;
+    outline:none;
+    font-family:inherit;
+}
+
+textarea.input{
+    height:110px;
+    resize:none;
+}
+
+.submit{
+    width:100%;
+    border:0;
+    background:var(--primary);
+    color:#fff;
+    padding:14px;
+    border-radius:10px;
+    cursor:pointer;
+    font-family:Inter;
+    font-weight:700;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#04111d;
+    color:#fff;
+    padding:35px 6% 20px;
+    text-align:center;
+}
+
+.footer-brand{
+    font-family:Inter;
+    font-size:22px;
+    font-weight:800;
+}
+
+.footer-brand span{
+    color:var(--gold);
+}
+
+footer p{
+    color:#81959d;
+    font-size:13px;
+    margin:7px;
+}
+
+.dev{
+    margin-top:18px;
+    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#6f838b;
+    font-family:Inter;
+    font-size:11px;
+}
+
+.dev strong{
+    color:#fff;
+}
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    left:22px;
+    bottom:22px;
+    width:62px;
+    height:62px;
+    background:#25d366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:29px;
+    box-shadow:0 10px 30px rgba(37,211,102,.35);
+    z-index:1000;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.06)}
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .hero-inner{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero p{
+        margin:auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-panel{
+        max-width:550px;
+        width:100%;
+        margin:auto;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .top{
+        justify-content:center;
+        gap:10px;
+        flex-wrap:wrap;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-btn{
+        display:none;
+    }
+
+    .navbar{
+        height:68px;
+    }
+
+    .hero{
+        min-height:680px;
+    }
+
+    .hero-inner{
+        width:90%;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero h2{
+        font-size:21px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+        margin-top:-30px;
+    }
+
+    .stat{
+        border-bottom:1px solid #edf1f1;
+    }
+
+    section{
+        padding:65px 5%;
+    }
+
+    .section-head h2{
+        font-size:29px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-tools{
+        margin-bottom:20px;
+    }
+
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cta-box{
+        padding:35px 20px;
+    }
+
+    .cta-box h2{
+        font-size:27px;
+    }
+
+    .contact-form{
+        padding:22px;
+    }
+
+    .points{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP -->
+<div class="top">
+    <div>
+        <span>📍 Chak Alwardi Khan</span>
+        <span>🕒 Online Services Available</span>
+    </div>
+
+    <div>
+        📞 0308-4083579
+    </div>
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<a href="#home" class="brand">
+    <div class="logo">AC</div>
+
+    <div class="brand-text">
+        <strong>Ahmad Communication</strong>
+        <small>DIGITAL SERVICE POINT</small>
+    </div>
+</a>
+
+<ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#process">How It Works</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+<a href="https://wa.me/923084083579" target="_blank" class="nav-btn">
+    WhatsApp
+</a>
+
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-inner">
+
+<div>
+
+<div class="badge">
+    <i></i>
+    Professional Online & Digital Services
+</div>
+
+<h1>
+    Ahmad <span>Communication</span>
+</h1>
+
+<h2>
+    آپ کی ضروری Online Services، ایک ہی جگہ
+</h2>
+
+<p>
+    Government Applications، NADRA، Education، Jobs،
+    Loans، Online Forms، Printing، Computer اور دیگر
+    Digital Services کے لیے آسان اور قابلِ اعتماد سہولت۔
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/923084083579?text=Assalam-o-Alaikum%20Ahmad%20Communication%20mujhe%20service%20chahiye."
+target="_blank"
+class="btn btn-main">
+💬 WhatsApp پر رابطہ
+</a>
+
+<a href="tel:+923084083579" class="btn btn-gold">
+📞 Call Now
+</a>
+
+<a href="#services" class="btn btn-outline">
+خدمات دیکھیں ↓
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-panel">
+
+<div class="panel-top">
+
+<div class="panel-title">
+Popular Services
+</div>
+
+<div class="online">
+● Online
+</div>
+
+</div>
+
+<div class="quick-services">
+
+<div class="quick">
+<span class="quick-icon">🪪</span>
+<span>NADRA / B-Form</span>
+</div>
+
+<div class="quick">
+<span class="quick-icon">🎓</span>
+<span>AIOU / Education</span>
+</div>
+
+<div class="quick">
+<span class="quick-icon">💼</span>
+<span>Jobs / Forms</span>
+</div>
+
+<div class="quick">
+<span class="quick-icon">💰</span>
+<span>Loans / Schemes</span>
+</div>
+
+<div class="quick">
+<span class="quick-icon">📄</span>
+<span>Certificates</span>
+</div>
+
+<div class="quick">
+<span class="quick-icon">🖨️</span>
+<span>Printing</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- STATS -->
+<div class="stats">
+
+<div class="stat">
+<strong>20+</strong>
+<span>Digital Services</span>
+</div>
+
+<div class="stat">
+<strong>1</strong>
+<span>Trusted Service Point</span>
+</div>
+
+<div class="stat">
+<strong>24/7</strong>
+<span>WhatsApp Contact</span>
+</div>
+
+<div class="stat">
+<strong>2026</strong>
+<span>Serving Digitally</span>
+</div>
+
+</div>
+
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+
+<div class="section-head">
+
+<div class="tag">Our Services</div>
+
+<h2>ہماری Professional Services</h2>
+
+<p>
+اپنی مطلوبہ service تلاش کریں اور مزید معلومات کے لیے WhatsApp پر رابطہ کریں۔
+</p>
+
+</div>
+
+
+<div class="service-tools">
+
+<input
+type="text"
+id="search"
+class="search"
+placeholder="🔎 Service تلاش کریں..."
+onkeyup="searchServices()">
+
+</div>
+
+
+<div class="service-grid" id="serviceGrid">
+
+<div class="service">
+<div class="service-icon">🪪</div>
+<h3>NADRA Services</h3>
+<p>B-Form، CNIC، FRC اور دیگر NADRA متعلقہ Online Services۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">📋</div>
+<h3>Government Applications</h3>
+<p>مختلف سرکاری پروگرامز اور Online Applications میں سہولت۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">💰</div>
+<h3>Loans & Finance</h3>
+<p>PM Youth Loan، کاروباری فنانس اور متعلقہ Online Applications۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🏠</div>
+<h3>Housing Schemes</h3>
+<p>Apni Chhat Apna Ghar اور دیگر متعلقہ پروگرامز میں رہنمائی۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🌾</div>
+<h3>Livestock Card</h3>
+<p>Livestock Card اور متعلقہ Government Programs کی درخواستیں۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🎓</div>
+<h3>AIOU Services</h3>
+<p>Admissions، Assignments، Exams اور دیگر AIOU Online Services۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">📚</div>
+<h3>Education Services</h3>
+<p>School، College، University اور Board Online Services۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">💼</div>
+<h3>Job Applications</h3>
+<p>Government اور Private Jobs کے Online Forms اور Applications۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">📄</div>
+<h3>Domicile & Certificates</h3>
+<p>Domicile، Character اور دیگر Certificates کے لیے سہولت۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🚗</div>
+<h3>Driving Licence</h3>
+<p>Driving Licence، Renewal، Challan اور Online Services۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🌐</div>
+<h3>Online Forms</h3>
+<p>مختلف Websites اور Portals پر Online Forms جمع کروانے میں مدد۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🌾</div>
+<h3>Land Record</h3>
+<p>Fard اور Land Record سے متعلق Online سہولیات۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">💳</div>
+<h3>EasyPaisa / JazzCash</h3>
+<p>Digital Payments، Mobile Load اور دیگر سہولیات۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">🖨️</div>
+<h3>Printing & Scanning</h3>
+<p>Printing، Scanning، Photocopy، Typing اور Document Services۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">💻</div>
+<h3>Computer Services</h3>
+<p>MS Word، Excel، CV، Applications اور دیگر Computer Work۔</p>
+</div>
+
+<div class="service">
+<div class="service-icon">📱</div>
+<h3>Digital Assistance</h3>
+<p>Email، Online Accounts، Applications اور Basic Digital Help۔</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+<div class="about-grid">
+
+<div class="about-card">
+
+<div class="big">AC</div>
+
+<h3>Ahmad Communication</h3>
+
+<p>
+Digital Service Point
+<br>
+Chak Alwardi Khan
+</p>
+
+<div style="margin-top:25px;color:#c8e2df;">
+آپ کی سہولت، ہماری ترجیح۔
+</div>
+
+</div>
+
+
+<div class="about-text">
+
+<div class="section-head" style="text-align:right;margin:0 0 15px 0;">
+<div class="tag">About Us</div>
+</div>
+
+<h2>آپ کے کام کو آسان بنانے کے لیے</h2>
+
+<p>
+Ahmad Communication ایک Digital Service Point ہے جہاں مختلف
+Online، Government، Education، Job اور Computer Services
+ایک ہی جگہ فراہم کرنے کی کوشش کی جاتی ہے۔
+</p>
+
+<p>
+ہمارا مقصد لوگوں کو Online Applications اور Digital Services
+تک آسان رسائی دینا اور Application Process میں مناسب رہنمائی فراہم کرنا ہے۔
+</p>
+
+<div class="points">
+
+<div class="point">✓ آسان Online Services</div>
+<div class="point">✓ مناسب رہنمائی</div>
+<div class="point">✓ مختلف Services ایک جگہ</div>
+<div class="point">✓ WhatsApp Support</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- PROCESS -->
+<section class="process" id="process">
+
+<div class="section-head">
+
+<div class="tag">How It Works</div>
+
+<h2>ہماری Service کیسے حاصل کریں؟</h2>
+
+<p>صرف چند آسان steps میں ہم سے رابطہ کریں۔</p>
+
+</div>
+
+
+<div class="process-grid">
+
+<div class="step">
+<div class="step-number">01</div>
+<h3>رابطہ کریں</h3>
+<p>WhatsApp یا Phone پر ہم سے رابطہ کریں۔</p>
+</div>
+
+<div class="step">
+<div class="step-number">02</div>
+<h3>Service بتائیں</h3>
+<p>اپنی مطلوبہ Service اور ضروری معلومات بتائیں۔</p>
+</div>
+
+<div class="step">
+<div class="step-number">03</div>
+<h3>Processing</h3>
+<p>ضروری Online Process میں آپ کی مدد کی جائے گی۔</p>
+</div>
+
+<div class="step">
+<div class="step-number">04</div>
+<h3>Complete</h3>
+<p>Application/Service کا متعلقہ Process مکمل کیا جائے گا۔</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+<div class="cta-box">
+
+<h2>کسی Service کے لیے مدد چاہیے؟</h2>
+
+<p>
+ابھی Ahmad Communication سے WhatsApp پر رابطہ کریں۔
+</p>
+
+<div class="hero-buttons" style="justify-content:center;">
+
+<a href="https://wa.me/923084083579"
+target="_blank"
+class="btn btn-main">
+💬 WhatsApp کریں
+</a>
+
+<a href="tel:+923084083579"
+class="btn btn-gold">
+📞 0308-4083579
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+
+<div class="section-head">
+
+<div class="tag">FAQ</div>
+
+<h2>اکثر پوچھے جانے والے سوالات</h2>
+
+</div>
+
+
+<div class="faq-list">
+
+<details>
+<summary>کیا Online Applications کی سہولت موجود ہے؟</summary>
+<p>
+جی، مختلف Government، Education، Jobs اور دیگر Online Applications میں سہولت اور رہنمائی فراہم کی جاتی ہے۔
+</p>
+</details>
+
+<details>
+<summary>کیا WhatsApp پر رابطہ کیا جا سکتا ہے؟</summary>
+<p>
+جی، آپ 0308-4083579 پر WhatsApp کے ذریعے رابطہ کر سکتے ہیں۔
+</p>
+</details>
+
+<details>
+<summary>کیا Government Scheme کی approval یقینی ہے؟</summary>
+<p>
+نہیں۔ Ahmad Communication صرف Application/Process میں سہولت اور رہنمائی فراہم کرتا ہے۔ منظوری متعلقہ ادارے کے قواعد و ضوابط کے مطابق ہوتی ہے۔
+</p>
+</details>
+
+<details>
+<summary>Ahmad Communication کہاں موجود ہے؟</summary>
+<p>
+Ahmad Communication، Chak Alwardi Khan میں موجود ہے۔
+</p>
+</details>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<h2>ہم سے رابطہ کریں</h2>
+
+<p>
+کسی بھی Online، Government، Education یا Computer Service
+کے لیے ہمیں Message یا Call کریں۔
+</p>
+
+<div class="contact-item">
+<div class="ci">📞</div>
+<div>
+<strong>Phone / WhatsApp</strong>
+<span>0308-4083579</span>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="ci">📍</div>
+<div>
+<strong>Address</strong>
+<span>Chak Alwardi Khan</span>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="ci">💻</div>
+<div>
+<strong>Service Type</strong>
+<span>Online & Digital Services</span>
+</div>
+</div>
+
+</div>
+
+
+<div class="contact-form">
+
+<h3>Quick Message</h3>
+
+<input id="name" class="input" type="text" placeholder="آپ کا نام">
+
+<input id="service" class="input" type="text" placeholder="آپ کو کون سی Service چاہیے؟">
+
+<textarea id="message" class="input" placeholder="اپنا Message لکھیں..."></textarea>
+
+<button class="submit" onclick="sendWhatsApp()">
+WhatsApp پر Message بھیجیں
+</button>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- DISCLAIMER -->
+<div style="
+background:#fff7df;
+padding:25px 7%;
+text-align:center;
+color:#66551c;
+font-size:13px;
+">
+
+<strong>⚠️ اہم وضاحت</strong>
+
+<p>
+Ahmad Communication مختلف Online Applications اور Digital Services
+میں سہولت اور رہنمائی فراہم کرتا ہے۔ کسی بھی Government Scheme،
+Loan، Grant، Job یا Application کی منظوری متعلقہ ادارے کے
+قواعد و ضوابط کے مطابق ہوتی ہے۔ منظوری کی ضمانت نہیں دی جاتی۔
+</p>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer-brand">
+Ahmad <span>Communication</span>
+</div>
+
+<p>
+Digital • Online • Government • Education • Computer Services
+</p>
+
+<p>
+📍 Chak Alwardi Khan &nbsp; | &nbsp; 📞 0308-4083579
+</p>
+
+<div class="dev">
+Website Designed & Developed by
+<strong>Mudasir Nazir</strong>
+</div>
+
+<p style="margin-top:15px;">
+© 2026 Ahmad Communication — All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+<a
+class="whatsapp"
+href="https://wa.me/923084083579"
+target="_blank"
+title="WhatsApp">
+💬
+</a>
+
+
+<script>
+
+/* SERVICE SEARCH */
+
+function searchServices(){
+
+    let input =
+    document.getElementById("search")
+    .value
+    .toLowerCase();
+
+    let services =
+    document.querySelectorAll(".service");
+
+    services.forEach(function(service){
+
+        let text =
+        service.innerText.toLowerCase();
+
+        if(text.includes(input)){
+            service.style.display="block";
+        }
+        else{
+            service.style.display="none";
+        }
+
+    });
+}
+
+
+/* WHATSAPP FORM */
+
+function sendWhatsApp(){
+
+    let name =
+    document.getElementById("name").value;
+
+    let service =
+    document.getElementById("service").value;
+
+    let message =
+    document.getElementById("message").value;
+
+    let text =
+    "Assalam-o-Alaikum Ahmad Communication%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Message: " + encodeURIComponent(message);
+
+    window.open(
+        "https://wa.me/923084083579?text=" + text,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+</html>
